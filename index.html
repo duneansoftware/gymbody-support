@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GymBody — Support</title>
+  <meta name="description" content="Support and contact information for GymBody, the offline-first workout planner for iPhone." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111827;
+      --muted: #6b7280;
+      --accent: #14b8a6;
+      --card: #f8fafc;
+      --border: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0f17;
+        --fg: #e5e7eb;
+        --muted: #9ca3af;
+        --accent: #2dd4bf;
+        --card: #111827;
+        --border: #1f2937;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      padding: 32px 20px 64px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 8px;
+    }
+    .mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), #6366f1);
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    h1 { font-size: 28px; margin: 0; }
+    .lede { color: var(--muted); margin: 4px 0 28px; }
+    h2 { font-size: 20px; margin: 28px 0 8px; }
+    h3 { font-size: 16px; margin: 18px 0 4px; }
+    p, li { color: var(--fg); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin: 14px 0;
+    }
+    details {
+      border-top: 1px solid var(--border);
+      padding: 12px 0;
+    }
+    details:last-of-type { border-bottom: 1px solid var(--border); }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "+";
+      display: inline-block;
+      width: 1.2em;
+      color: var(--muted);
+    }
+    details[open] summary::before { content: "−"; }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    footer {
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="mark" aria-hidden="true">GB</div>
+    <div>
+      <h1>GymBody Support</h1>
+      <p class="lede">Offline-first workout planner for iPhone.</p>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2 style="margin-top:0">Contact</h2>
+    <div class="contact">
+      <div>Email: <a href="mailto:dunean.software@gmail.com">dunean.software@gmail.com</a></div>
+      <div>Response time: typically within 2 business days.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About GymBody</h2>
+    <p>
+      GymBody is a private, offline-first workout planner and log book for serious lifters
+      and fitness-minded households. It runs entirely on your iPhone — no account,
+      no cloud sync, no analytics, no ads.
+    </p>
+    <ul>
+      <li>Adaptive workout planner with Coach, Guide, and Create modes.</li>
+      <li>Live workout logging with quick "kg x reps" entry and on-the-fly exercise swaps.</li>
+      <li>Interactive body map with primary, secondary, and stabilizer roles.</li>
+      <li>Recovery-aware suggestions (Ready / Borderline / Fatigued) based on your last sessions.</li>
+      <li>Activity history browsing by month, list, and exercise.</li>
+      <li>Body measurement tracking with a visual measurement guide.</li>
+      <li>Multiple profiles on one device for households or training partners.</li>
+      <li>Portable <code>.gybd</code> backup and share files.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Frequently asked questions</h2>
+
+    <details>
+      <summary>How do I create my first user profile?</summary>
+      <p>
+        On a fresh install, GymBody opens directly on Settings → Users with a prompt to
+        create your first profile. Tap <strong>Add User</strong>, enter a name and marker,
+        choose a preferred body model, and save. The app then loads a starter Coach
+        proposal under <strong>Next Workout</strong>.
+      </p>
+    </details>
+
+    <details>
+      <summary>How do I plan my next workout?</summary>
+      <p>
+        Open the <strong>Next</strong> tab. Choose a planning mode:
+      </p>
+      <ul>
+        <li><strong>Coach</strong> — builds a session from your training history.</li>
+        <li><strong>Guide</strong> — tap muscles on the body map; the workout updates as you change selection.</li>
+        <li><strong>Create</strong> — start blank and add exercises one at a time.</li>
+        <li><strong>Saved</strong> — re-open a previously saved workout.</li>
+      </ul>
+      <p>Use the lock icon to freeze the current draft so refreshes don't overwrite it.</p>
+    </details>
+
+    <details>
+      <summary>How do I log a workout?</summary>
+      <p>
+        Open <strong>Log</strong>, then tap <strong>Start Workout</strong>. Enter sets in the
+        format <code>kg x reps</code> (e.g. <code>40x10, 50x8, 50x8</code>). Use the swap
+        action on a card if a machine is busy. Tap <strong>Finish</strong> to save the
+        session into Activity.
+      </p>
+    </details>
+
+    <details>
+      <summary>How do I back up or share my data?</summary>
+      <p>
+        Go to <strong>Settings → Transfer</strong>. <strong>Export</strong> creates a
+        <code>.gybd</code> file containing your selected workout history; you can email it,
+        AirDrop it, or save it via Files. <strong>Import</strong> brings a <code>.gybd</code>
+        or legacy <code>.json</code> file back in. Planned workouts and history are routed
+        to the right place automatically.
+      </p>
+    </details>
+
+    <details>
+      <summary>Does GymBody send my data anywhere?</summary>
+      <p>
+        No. GymBody runs entirely on your device. There is no account, sign-in, cloud sync,
+        analytics, or ads. Your training data only leaves the device when you explicitly
+        export a <code>.gybd</code> file.
+      </p>
+    </details>
+
+    <details>
+      <summary>Why am I asked for HealthKit / location / contacts?</summary>
+      <p>
+        You shouldn't be — GymBody does not request HealthKit, location, contacts,
+        or notification permissions. If iOS prompts you for one of these from another
+        screen while GymBody is in the background, that prompt is not coming from this app.
+      </p>
+    </details>
+
+    <details>
+      <summary>How do I add an exercise that's not in the catalog?</summary>
+      <p>
+        Open <strong>Explore</strong>, tap <strong>Add manual exercise</strong>,
+        and fill in name, primary muscles, and any secondary or stabilizer groups.
+        The new exercise becomes available in Next Workout, Log Workout, and the
+        catalog filters.
+      </p>
+    </details>
+
+    <details>
+      <summary>How do I reset the intro guide or tab tips?</summary>
+      <p>
+        Go to <strong>Settings → Help</strong>. Use <strong>Play Intro Guide</strong>
+        to replay the onboarding, or <strong>Show Tab Tips Again</strong> to bring back
+        the per-tab help banners.
+      </p>
+    </details>
+
+    <details>
+      <summary>How do I clear all logged workouts?</summary>
+      <p>
+        Go to <strong>Settings → Danger Zone → Clear Workout Activity</strong>. This
+        deletes all logged sessions but keeps your saved workouts and user profiles.
+        Export a <code>.gybd</code> backup first if you want to keep a copy.
+      </p>
+    </details>
+
+    <details>
+      <summary>The app feels stuck or slow. What should I try?</summary>
+      <ol>
+        <li>Quit and relaunch GymBody.</li>
+        <li>Restart your iPhone.</li>
+        <li>Make sure iOS is up to date (<strong>Settings → General → Software Update</strong>).</li>
+        <li>If the issue persists, email us with your device model, iOS version, and a short description.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>Will my workouts sync to my other Apple devices?</summary>
+      <p>
+        Not currently. GymBody is intentionally offline. To move data between devices,
+        export a <code>.gybd</code> file from the source device and import it on the
+        target device.
+      </p>
+    </details>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>
+      GymBody does not collect personal data. Your training history, profiles, and
+      measurements are stored only on your device. The app does not communicate with
+      any server.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> GymBody. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
